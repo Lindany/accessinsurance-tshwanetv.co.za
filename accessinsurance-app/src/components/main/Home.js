@@ -8,6 +8,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       menuOpen: false,
+      page: 'Home'
     };
   }
 
@@ -53,15 +54,17 @@ export default class Home extends Component {
 
     const menuItems = menu.map((val, index) => {
       return (
-        <MenuItem
+        <Link to={`/${navroute[index]}`}><MenuItem
           key={index}
           delay={`${index * 0.1}s`}
           onClick={() => {
             this.handleLinkClick();
+            this.setState({page:navroute[index] })
           }}
         >
-        <Link to={`/${navroute[index]}`}>{val}</Link>
-        </MenuItem>
+        {/* <Link to={`/${navroute[index]}`}>{val}</Link> */}
+        {val}
+        </MenuItem></Link>
       );
     });
 
