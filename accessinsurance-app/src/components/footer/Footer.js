@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Footer.scss';
 
 export default class Footer extends Component {
     render() {
         return (
-            <div>
+            <div className={'footer-conatiner'}>
                 Footer
             </div>
         )

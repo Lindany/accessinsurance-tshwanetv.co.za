@@ -12,6 +12,7 @@ import SignIn from '../signin/Signin';
 import SportMe from '../sportme/SportMe';
 import Login from '../myaccount/Login';
 import Account from '../myaccount/Account';
+import Header from '../header/Header'
 
 const Main = () => (
     <main>
